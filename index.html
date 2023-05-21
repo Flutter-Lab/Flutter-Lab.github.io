@@ -35,7 +35,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '3712105717';
+    var serviceWorkerVersion = '3972333340';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -47,10 +47,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: #1E1E28;
     }
 
     .indicator {
-      width: 50vw;
+      width: 10vw;
     }
   </style>
 
@@ -58,7 +59,7 @@
 
 <body style="overflow: hidden">
   <div id="loading_indicator" class="container">
-    <img class="indicator" src=".assets/loading-loader.gif" />
+    <img class="indicator" src="./assets/loading_1_trans.gif" />
     <script>
       window.addEventListener('load', function (ev) {
         // Download main.dart.js
@@ -82,7 +83,7 @@
           if (loadingIndicator) {
             loadingIndicator.remove();
           }
-        }, 10000)
+        }, 5000)
       }
     </script>
 </body>
